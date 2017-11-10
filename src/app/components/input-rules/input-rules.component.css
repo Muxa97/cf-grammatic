@@ -1,0 +1,17 @@
+
+app-input-rules {
+  margin: 0;
+  height: 100%;
+  width: auto;
+  max-width: 40%;
+  border-left: 2px solid burlywood;
+  background-color: antiquewhite;
+}
+
+.rules-wrapper {
+  margin: 10px;
+}
+
+.rules-wrapper span {
+  font-weight: bold;
+}

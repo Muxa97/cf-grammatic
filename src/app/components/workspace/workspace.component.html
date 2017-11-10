@@ -1,0 +1,15 @@
+<div class="workspace-wrapper">
+  <div>
+    <mat-form-field class="entryField">
+      <input matInput placeholder="Input expression" [(ngModel)]="expressionText"value="{{expressionText}}" (keyup.enter)="checkExpression()"/>
+    </mat-form-field>
+    <button mat-raised-button class="enterButton" color="primary" (click)="checkExpression()">Enter</button>
+  </div>
+  <div class="history">
+    <div class="checkedExp" *ngFor="let exp of expressionService.getExpressions()">
+      <span class="valid" *ngIf="exp.isValid === 1">{{exp.expression}} — верное выражение</span>
+      <span class="notValid" *ngIf="exp.isValid === 2">{{exp.expression}} — неверное выражение</span>
+      <span class="except" *ngIf="exp.isValid === 3">{{exp.expression}} — выражение верное для немодифицированной грамматики</span>
+    </div>
+  </div>
+</div>

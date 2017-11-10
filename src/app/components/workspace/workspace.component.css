@@ -1,0 +1,53 @@
+
+app-workspace {
+  flex-grow: 2;
+}
+
+.workspace-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-height: 400px;
+}
+
+.entryField {
+  margin: 15px;
+  width: 300px;
+}
+
+.enterButton {
+  margin: 15px;
+  height: auto;
+  width: auto;
+}
+
+.history {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  max-height: 250px;
+  width: 100%;
+}
+
+.checkedExp {
+  margin-left: 5px 0;
+  height: 50px;
+  width: 100%;
+  font-size: 1.2em;
+  border: 1px solid deepskyblue;
+  background-color: #eeeeee;
+}
+
+.valid {
+  color: green;
+}
+
+.notValid {
+  color: #8c0000;
+}
+
+.except {
+  color: #a4a400;
+}

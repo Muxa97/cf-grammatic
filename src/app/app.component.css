@@ -1,0 +1,10 @@
+
+.content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  border: 3px solid deepskyblue;
+}
