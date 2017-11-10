@@ -11,7 +11,7 @@ export class WorkspaceComponent {
 
   public expressionText: string;
 
-  constructor(private expressionService: ExpressionService) { }
+  constructor(public expressionService: ExpressionService) { }
 
   public checkExpression(): void {
     this.expressionService.checkExpression(this.expressionText);
